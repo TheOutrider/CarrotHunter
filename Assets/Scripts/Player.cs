@@ -60,6 +60,7 @@ public class Player : MonoBehaviour
             }
             else
             {
+                Debug.Log("TESRING CHANGES");
                 audioSource.clip = score % 2 == 0 ? killSound1 : killSound2;
                 audioSource.Play();
                 spriteRenderer.sprite = score % 2 == 0 ? killFace : originalFace;
